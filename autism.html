@@ -1,0 +1,1025 @@
+	<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=shift_jis"><link rel="shortcut icon" href="http://i.imgur.com/gD387AO.png">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta property="og:site_name" content="Kamuro.xyz">
+<meta property="og:title" content="/r/Touhou Sorter">
+<meta property="og:image" content="http://i.imgur.com/bSxFwsL.png">
+<meta property="og:description" content="This is a mistake">
+<!-- Made by Ron, Tamamo#1343 on Discord, http://steamcommunity.com/id/Futatsuiwa_Mamizou/ on steam.--> 
+<meta name="author" content="Tamamo#1343">
+
+<script type="text/javascript">
+ 
+var namMember = new Array(
+
+/* [1,0,0] = Staff Members
+   [0,1,0] = Banned Users
+   [0,0,1] = Bots
+*/
+["Tacocat <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/sJbcOop.png\">", [0,0,0]],
+
+["Hrusa <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/2IhSzza.png\">", [1,0,0]],
+
+["RA2lover <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/HRmaYHQ.png\">", [0,0,0]],
+
+["Rosenmann <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/p5C55sr.png\">", [0,0,0]],
+
+//was broken in the first draft
+["Robo Nitori<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/2BS8wXg.png\">", [0,0,1]],
+
+["Gman8r<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/rDCIV2c.png\">", [0,0,0]],
+
+// here would be spaztique if he didnt fucking bug the bot out
+
+["koosh<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/5qiWQPE.png\">", [0,0,0]],
+
+["J U N K O<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/yozYIDf.png\">", [0,0,0]],
+
+//somehow forgot this IRC lad
+["Suzuran<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/o7HBkgX.png\">", [0,0,0]],
+
+// you can tell this guy is american kek
+["Bucky <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/ldIzAXv.png\">", [0,0,0]],
+
+["Greta<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/arNLcyl.png\">", [0,0,0]],
+
+["Sphinx<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/nwPJFhv.png\">", [0,0,0]],
+
+// or yuor devil
+["Angel<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/UMDZJkk.png\">", [0,0,0]],
+
+["PredictableBeaco<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Z4WuZ6h.png\">", [0,0,0]],
+
+["Atestinal<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/oUpqiGb.png\">", [0,0,0]],
+
+//is a bit clingy, also isn't vex.
+["Izayoi Sakuya (not vex)<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/LXVAeoo.png\">", [0,0,0]],
+
+["Gal<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/I41ArhV.png\">", [0,0,0]],
+
+//doesn't wanna show his results pfff
+["Shooteiming<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/DILqqIF.png\">", [0,0,0]],
+
+["Mister Roboot<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/dIm27tm.png\">", [0,0,0]],
+
+//Hulohot's grave
+
+["DracoGideon<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/hwMRhYM.png\">", [0,0,0]],
+
+//league of legends reference??
+["tentakill<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/BYqbbvk.png\">", [0,0,0]],
+
+//good taste
+["inabate (riiya)<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/griOJ3Q.png\">", [0,0,0]],
+
+["White_Pikmin<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/O4Cdh1U.png\">", [0,0,0]],
+
+["Zettchan<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/E0GkA5f.png\">", [0,0,0]],
+
+["Spyrop<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/3lBLFN3.png\">", [0,0,0]],
+
+//drew a HD tomato for me
+["Speck<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/8fbcTIK.png\">", [0,0,0]],
+
+//Yukkuri's grave (Fuck yukkuris though)
+
+//somehow wasnt in the first list lmao
+["Atom265<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/CMZZ85g.png\">", [0,0,0]],
+
+["Many Babies<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/wIoSzNz.png\">", [0,0,0]],
+
+//dank memes
+["Swirlingmurk<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/lGBnhvh.png\">", [0,0,0]],
+
+["b00b1e<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/JV7l2W6.png\">", [0,0,0]],
+///  ^ avatar update from here\
+
+// i met this nerd on saltybet a day before he joined
+["Warthog <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/0LJ7msW.jpg\">", [0,0,0]],
+
+["Puzzle Plate<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/4CHInoI.jpg\">", [0,0,0]],
+
+["Nekibata <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/94EEU5S.jpg\">", [0,0,0]],
+
+["The King in Yellow<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Zd4NyCO.jpg\">", [0,1,0]],
+
+["Peacock Roy<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/9fuiM84.jpg\">", [1,0,0]],
+
+["Nelrene<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/gJfy6ow.jpg\">", [0,0,0]],
+
+//drew 18+ for me
+["NanoStar<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/H1uR87t.jpg\">", [0,1,0]],
+
+//REVERRRRRRRRB
+["Kung Fu Cthulhu <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/CQj4S6Z.jpg\">", [0,0,1]],
+
+//toxic piece of shit & mic too loud
+["Evenescence<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/mSskOyN.jpg\">", [1,0,0]],
+
+["Easternmouse<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/TLD8ntF.jpg\">", [0,0,0]],
+
+//my god this guy :unamused:
+["Alpha Centori<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/qCrK6Wm.jpg\">", [0,0,0]],
+
+//wrost mod
+["Magus<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/wXdkBCA.jpg\">", [1,0,0]],
+
+["Coolpool <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/fHb7jtv.jpg\">", [0,0,0]],
+
+//"guys server is better"
+["Marth <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/uhlfKKS.png\">", [0,1,0]],
+
+//awoo
+["Chou Tengen Toppa Guren Lagann <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/J5gXXMT.jpg\">", [0,0,1]],
+
+//stole our memes and brought them to DP
+["zero <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/uWrzQ4Y.jpg\">", [1,0,0]],
+
+["novice259 <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/HzB6MgP.jpg\">", [0,0,0]],
+
+//a living myth
+["yagi_takeru <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/CkxOWX6.jpg\">", [0,1,0]],
+
+["Sladjkf<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/VTl5qAm.jpg\">", [0,0,0]],
+
+["Overcoat<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/tbRUobu.jpg\">", [0,0,0]],
+
+//the youngest memer known to mankind
+["Robo (Paisley)<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/ghEc2Dj.png\">", [0,0,0]],
+
+["Snowy<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/KxtgvtN.jpg\">", [0,0,0]],
+
+["HaruEQ<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/JtMQ2gs.png\">", [0,1,0]],
+
+["Crescentia<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/D3wXO5t.jpg\">", [0,0,0]],
+
+//toxicity incarnate
+["Rei<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/UjjwbVs.jpg\">", [0,0,0]],
+
+// i miss you bud
+["Backo<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/0HsLwtv.jpg\">", [0,0,0]],
+
+["GoldenDrummer<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/iEDzQXS.jpg\">", [0,0,0]],
+
+// i miss you :sob:
+["Sakuya_lvl_9<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/5GkiVpu.jpg\">", [0,1,0]],
+
+["PigDevil<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/VlwQlmG.jpg\">", [0,0,0]],
+
+// paid her 5 bucks to draw a tomato
+["Zed <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/jWBhDR8.jpg\">", [0,0,0]],
+
+//not the brightest star
+["Cupcakewarrior<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/yZl4ZRQ.jpg\">", [0,0,0]],
+
+["Momo<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/UKTEUzT.png\">", [0,1,0]],
+
+["Hakur9<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/TTknzDa.jpg\">", [0,1,0]],
+
+//second best bot
+["DSL<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/LvZ9Z7T.jpg\">", [0,0,1]],
+
+["Akit/Kaitlyn<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/RWcDOgQ.jpg\">", [0,0,0]],
+
+["Rokugurin<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/XLZU9eZ.jpg\">", [0,0,0]],
+
+//la chocalatine
+["Kurata<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/eELr8PW.jpg\">", [0,0,0]],
+
+["Prismriver Radio<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/cbmxgZi.jpg\">", [0,0,1]],
+
+//shark 2.0
+["Dun the Drunken Shark<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/NRGnRkn.jpg\">", [0,0,0]],
+
+//*glomps*
+["Zam-Sensei<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/LAv1GZx.jpg\">", [0,0,0]],
+
+["e<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/rPqF88r.jpg\">", [0,0,0]],
+
+["Eirin Yagokoro<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/X4iLb05.jpg\">", [0,0,0]],
+
+["HTFCirno2000 <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/03NYNdH.jpg\">", [0,0,0]],
+
+//draws 18+ memes
+["ProfitShame<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Ad8oNlQ.jpg\">", [0,0,0]],
+
+["Frelia<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Py7ZmEV.jpg\">", [0,0,0]],
+
+//a bit creepy
+["Miky225<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/ZvUpJo9.jpg\">", [0,0,0]],
+
+["Oopsjpeg<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/UQ85HRd.jpg\">", [0,0,0]],
+
+["ParuParu<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/BubvbOH.jpg\">", [0,0,0]],
+
+["Rumia the Youfai of Darfness<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/W2Nidgn.jpg\">", [0,0,0]],
+
+["ZipperQR<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/TTRoHGC.jpg\">", [0,0,0]],
+
+["ZigZagWolf<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Do40PSO.jpg\">", [0,0,0]],
+
+["ƒ}ƒW‚Å<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/nLi2M3r.jpg\">", [0,0,0]],
+
+["Zextillion<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/CPNS1M1.jpg\">", [0,0,0]],
+
+["Yatsuzume<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/g5O9ZBC.jpg\">", [1,0,0]],
+
+//died with #traps
+["Markus<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/RXkbjdV.jpg\">", [0,0,0]],
+
+//general times got censored
+["Miku Payne<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/jHcCKpD.jpg\">", [0,0,0]],
+
+["TARDISES<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/ZFsQj3L.jpg\">", [0,0,0]],
+
+//sucks some major dick
+["Moobiful<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/2Q9YN4y.jpg\">", [0,0,0]],
+
+//hacked james's reddit account to post a meme
+["hazuzumi<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/cSocgCS.jpg\">", [0,0,0]],
+
+["Captain_Cool<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/2M9ncOE.png\">", [0,0,0]],
+
+["Kingsnail<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/YDQvf5d.png\">", [0,0,0]],
+
+// who u?
+["Nuggz<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/cgzo4bT.jpg\">", [0,0,0]],
+
+["Peter<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/q7QrSVI.jpg\">", [0,0,0]],
+
+["Nobelz<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/XqJbci6.jpg\">", [0,0,0]],
+
+["Muffinpimp<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Y74yqZ8.jpg\">", [0,0,0]],
+
+["Jenny<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/q3Dr9aq.jpg\">", [0,0,0]],
+
+//should go back to kancolle
+["Granpapa<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/KwExExC.jpg\">", [0,0,0]],
+
+["Sombres<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/hv375jm.jpg\">", [0,0,0]],
+
+["Pyromartian<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/392OyQz.png\">", [0,0,0]],
+
+// talk more you polish prick
+["Wasa<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/8VPPjpB.jpg\">", [0,0,0]],
+
+// i  miss you babe
+["Shred<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/ZbdmBFM.jpg\">", [0,0,0]],
+
+["Ekatchi<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/LlIUHqO.jpg\">", [0,0,0]],
+
+["Hikari<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/6rnkmy0.jpg\">", [0,0,0]],
+
+//"how do you want to be seen?" "as an autist"
+["Rune <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/4qeec1K.jpg\">", [0,0,0]],
+
+//welcom to my web sight
+["Not Daijoubu<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/itj0V0s.jpg\">", [0,0,0]],
+
+//i miss you2 :(
+["Snaggles<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/7lYH3hy.jpg\">", [0,0,0]],
+
+["ZM<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/FzOR30d.jpg\">", [0,0,0]],
+
+//blocked
+["DVDwinter<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/UOAWYRT.jpg\">", [0,0,0]],
+
+["Subconscious Eye<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Z9q9fbC.jpg\">", [0,0,0]],
+
+["DJ Koishi<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/mHRszxz.jpg\">", [0,0,0]],
+
+["Ciel-9<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/KPm75Ac.jpg\">", [0,0,0]],
+
+["Chromatope<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/SBpqElY.jpg\">", [0,0,0]],
+
+//mic is too loud
+["Bryce<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/boKZTRE.jpg\">", [0,0,0]],
+
+//tries to be salty, isn't.
+["Nradoto<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/CP3KXQf.jpg\">", [0,0,0]],
+
+//ill refrain from saying something keepo
+["Sync<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/VYn7lFE.jpg\">", [0,0,0]],
+
+["Spazvival <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/V4ZzEa4.jpg\">", [0,0,0]],
+
+//*pours mustard all over tammy*
+["Vex<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/pAlBHNw.jpg\">", [0,1,0]],
+
+//"I tried to hit on you whenever i talked to you"
+["Chenyaaa<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/m1T8yOg.png\">", [0,1,0]],
+
+["Roen<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/xCDTIS2.jpg\">", [0,0,0]],
+
+["Martin<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/ieZl5CG.jpg\">", [0,0,0]],
+
+//a fa--- bundle of sticks
+["Nagarach<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/DI5bBld.jpg\">", [0,0,0]],
+
+["Spaztron64<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/crInWrR.jpg\">", [0,0,0]],
+
+//professor oak: are you a boy or a girl?
+["Dakota<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/GqxoOVI.jpg\">", [0,1,0]],
+
+["Snakke<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/neRoibj.png\">", [0,0,0]],
+
+//is me from the future (australia)
+["Tamamo 2.0<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/Kmijsh0.jpg\">", [0,0,0]],
+
+// is actually a tomato
+["Tamamo<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/m9DMI94.png\">", [1,0,0]],
+
+["Hourai<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/0Jpdtgz.jpg\">", [0,0,1]],
+
+//likes to abuse naga
+["Spotty Len<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/nJ8MoCW.png\">", [1,0,0]],
+
+//EXPLOSION
+["SupremeExplosion<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/yoiluJo.png\">", [1,0,0]],
+
+["Tytanite<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/jspVKoi.jpg\">", [1,0,0]],
+
+//can't spell dork without kodr
+["Rdokodr<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/jvf1Hei.png\">", [1,0,0]],
+
+// mah boi
+["KonKon<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/iYy3m1j.png\">", [0,0,0]],
+
+// wrost tanuki
+["Mamizou<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/WCWlrRj.jpg\">", [1,0,0]],
+
+//new fauxm who dis?
+["Fauxm<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/eD29k9f.jpg\">", [1,0,0]],
+
+["Lord 'Dan' Alfredo<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/3al4BZk.jpg\">", [1,0,0]],
+
+["James <br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/svYCf04.jpg\">", [1,0,0]],
+
+//technically is on this list twice :thinking:
+["Koakumaist<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/u5f7rTe.jpg\">", [0,0,0]],
+
+["Koakuma Bot<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/3amWAvg.png\">", [0,0,1]],
+
+["Borp Bot<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/GfGiWzR.jpg\">", [0,0,1]],
+
+//yuck fou
+["Guy Hero<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/OqK0Xzh.png\">", [0,0,0]],
+
+["BCMCCMMNX<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/nW6wlR8.jpg\">", [0,0,0]],
+
+["Wolfy<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/zuJCMEp.jpg\">", [0,0,0]],
+
+//trigger happy
+["Avicena<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/t08R2MU.jpg\">", [1,0,0]],
+
+["Winter<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/LkMqvQ5.jpg\">", [0,0,0]],
+
+["Aristocrat<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/5hc6Paz.jpg\">", [0,0,0]],
+
+["Anseriform<br /><img class='resultImg' width=\"150px\" height=\"150px\" src=\"http://i.imgur.com/xWP1yvV.jpg\">", [1,0,0]],
+
+//AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+["Amber<br /><img class='resultImg' width='150px' height='150px' src='http://i.imgur.com/XkhBBQ4.jpg\'>", [0,0,0,0,0]]
+
+);
+ 
+ 
+
+ 
+//*********************************************************
+
+var namMember2 = namMember.slice(0); 
+var lstMember = new Array();
+var parent = new Array();
+var equal = new Array();
+var rec = new Array();
+var cmp1,cmp2;
+var head1,head2;
+var nrec;
+ 
+var numQuestion;
+var totalSize;
+var finishSize;
+var finishFlag;
+
+var s_lstMember = new Array();
+var s_parent = new Array();
+var s_equal = new Array();
+var s_rec = new Array();
+var s_cmp1,s_cmp2;
+var s_head1,s_head2;
+var s_nrec;
+ 
+var s_numQuestion;
+var s_totalSize;
+var s_finishSize;
+var s_finishFlag;
+ 
+//The initialization of the variable+++++++++++++++++++++++++++++++++++++++++++++
+ 
+function initList(){
+ 
+var n = 0;
+var mid;
+var i;
+
+//Remove filtered choices
+
+namMember = namMember2.slice(0);
+var purgeMember = new Array();
+
+for (i=0; i<namMember.length; i++) {
+	purgeMember[i] = 0;
+}
+
+for (i=0; i<namMember.length; i++) {
+	for (var j=0; j<namMember[i][1].length; j++) {
+		if (namMember[i][1][j] === 1 && document.getElementById('opt'+j).checked === true) {
+			purgeMember[i] = 1;
+		}
+	}
+}
+
+for (i=namMember.length-1; i>= 0; i--){
+	if (purgeMember[i] === 1) namMember.splice(i, 1);
+}
+
+// Exit early if filtering removes too many entries
+
+if (namMember.length <= 5) {
+	alert("Too few characters to sort!");
+	return;
+} 
+
+// The sequence that you should sort
+ 
+lstMember[n] = new Array();
+ 
+for (i=0; i<namMember.length; i++) {
+	lstMember[n][i] = i;
+}
+parent[n] = -1;
+totalSize = 0;
+n++;
+ 
+for (i=0; i<lstMember.length; i++) {
+	// And element divides it in two/more than two
+	 
+	// Increase divided sequence of last in first member
+	 
+	if(lstMember[i].length>=2) {
+		mid = Math.ceil(lstMember[i].length/2);
+		lstMember[n] = new Array();
+		lstMember[n] = lstMember[i].slice(0,mid);
+		totalSize += lstMember[n].length;
+		parent[n] = i;
+		n++;
+		lstMember[n] = new Array();
+		lstMember[n] = lstMember[i].slice(mid,lstMember[i].length);
+		totalSize += lstMember[n].length;
+		parent[n] = i;
+		n++;
+	}
+}
+ 
+//Preserve this sequence
+ 
+for (i=0; i<namMember.length; i++) {
+	rec[i] = 0;
+}
+nrec = 0;
+ 
+//List that keeps your results
+//Value of link initial
+ 
+for (i=0; i<=namMember.length; i++) {
+	equal[i] = -1;
+}
+ 
+cmp1 = lstMember.length-2;
+cmp2 = lstMember.length-1;
+head1 = 0;
+head2 = 0;
+numQuestion = 1;
+finishSize = 0;
+finishFlag = 0;
+
+document.getElementById("leftField").onclick = function () { if(finishFlag==0) sortList(-1); }
+document.getElementById("rightField").onclick = function () { if(finishFlag==0) sortList(1); }
+
+document.getElementsByClassName('middleField')[0].onclick = function () { if(finishFlag==0) sortList(0); }
+document.getElementsByClassName('middleField')[0].innerHTML = "Tie";
+document.getElementsByClassName('middleField')[0].setAttribute('colspan', 1);
+document.getElementsByClassName('middleField')[3].setAttribute('colspan', 1);
+document.getElementsByClassName('middleField')[1].style.display = null;
+document.getElementsByClassName('middleField')[2].style.display = null;
+
+document.getElementById("optionField").style.display = 'none';
+
+showImage();
+numQuestion++;
+ 
+}
+ 
+function undoList(){
+
+lstMember = s_lstMember.slice(0);
+parent = s_parent.slice(0);
+equal = s_equal.slice(0);
+rec = s_rec.slice(0);
+
+cmp1 = s_cmp1;
+cmp2 = s_cmp2;
+head1 = s_head1;
+head2 = s_head2;
+nrec = s_nrec;
+
+numQuestion = s_numQuestion-1;
+totalSize = s_totalSize;
+finishSize = s_finishSize;
+finishFlag = s_finishFlag;
+
+showImage();
+numQuestion++;
+
+} 
+
+function saveList(){
+
+localStorage.setItem("namMember", JSON.stringify(namMember));
+localStorage.setItem("lstMember", JSON.stringify(lstMember));
+localStorage.setItem("parent", JSON.stringify(parent));
+localStorage.setItem("equal", JSON.stringify(equal));
+localStorage.setItem("rec", JSON.stringify(rec));
+
+localStorage.setItem("cmp1", cmp1);
+localStorage.setItem("cmp2", cmp2);
+localStorage.setItem("head1", head1);
+localStorage.setItem("head2", head2);
+localStorage.setItem("nrec", nrec);
+
+localStorage.setItem("numQuestion", numQuestion);
+localStorage.setItem("totalSize", totalSize);
+localStorage.setItem("finishSize", finishSize);
+localStorage.setItem("finishFlag", finishFlag);
+
+alert("Sort saved!");
+
+}
+
+function loadList(){
+	if(localStorage.getItem("cmp1")){
+
+		initList();
+		
+		namMember = JSON.parse(localStorage.getItem("namMember"));
+		lstMember = JSON.parse(localStorage.getItem("lstMember"));
+		parent = JSON.parse(localStorage.getItem("parent"));
+		equal = JSON.parse(localStorage.getItem("equal"));
+		rec = JSON.parse(localStorage.getItem("rec"));
+
+		cmp1 = parseInt(localStorage.getItem("cmp1"), 10);
+		cmp2 = parseInt(localStorage.getItem("cmp2"), 10);
+		head1 = parseInt(localStorage.getItem("head1"), 10);
+		head2 = parseInt(localStorage.getItem("head2"), 10);
+		nrec = parseInt(localStorage.getItem("nrec"), 10);
+
+		numQuestion = parseInt(localStorage.getItem("numQuestion"), 10);
+		totalSize = parseInt(localStorage.getItem("totalSize"), 10);
+		finishSize = parseInt(localStorage.getItem("finishSize"), 10);
+		finishFlag = parseInt(localStorage.getItem("finishFlag"), 10);
+
+		showImage();
+		numQuestion++;
+
+		alert("Sort loaded!");
+	}
+}
+ 
+//&#12522;&#12473;&#12488;&#12398;&#12477;&#12540;&#12488;+++++++++++++++++++++++++++++++++++++++++++
+ 
+//flag&#65306;Don't know characters
+ 
+// -1&#65306;Chose the left
+ 
+// 0&#65306;Tie
+ 
+// 1&#65306;Chose the right
+ 
+function sortList(flag){
+
+s_lstMember = lstMember.slice(0);
+s_parent = parent.slice(0); 
+s_equal = equal.slice(0); 
+s_rec = rec.slice(0); 
+
+s_cmp1 = cmp1;
+s_cmp2 = cmp2;
+s_head1 = head1;
+s_head2 = head2;
+s_nrec = nrec;
+
+s_numQuestion = numQuestion; 
+s_totalSize = totalSize;
+s_finishSize = finishSize;
+s_finishFlag = finishFlag;
+ 
+var i;
+ 
+var str;
+  
+//rec preservation
+ 
+if (flag<0) {
+	rec[nrec] = lstMember[cmp1][head1];
+	head1++;
+	nrec++;
+	finishSize++;
+	while (equal[rec[nrec-1]]!=-1) {
+		rec[nrec] = lstMember[cmp1][head1];
+		head1++;
+		nrec++;
+		finishSize++;
+	}
+}
+ 
+else if (flag>0) {
+	rec[nrec] = lstMember[cmp2][head2];
+	head2++;
+	nrec++;
+	finishSize++;
+	while (equal[rec[nrec-1]]!=-1) {
+		rec[nrec] = lstMember[cmp2][head2];
+		head2++;
+		nrec++;
+		finishSize++;
+	}
+}
+ 
+else {
+	rec[nrec] = lstMember[cmp1][head1];
+	head1++;
+	nrec++;
+	finishSize++;
+	while (equal[rec[nrec-1]]!=-1) {
+		rec[nrec] = lstMember[cmp1][head1];
+		head1++;
+		nrec++;
+		finishSize++;
+	}
+	equal[rec[nrec-1]] = lstMember[cmp2][head2];
+	rec[nrec] = lstMember[cmp2][head2];
+	head2++;
+	nrec++;
+	finishSize++;
+	while (equal[rec[nrec-1]]!=-1) {
+		rec[nrec] = lstMember[cmp2][head2];
+		head2++;
+		nrec++;
+		finishSize++;
+	}
+}
+ 
+ 
+ 
+//Processing after finishing with one list
+ 
+if (head1<lstMember[cmp1].length && head2==lstMember[cmp2].length) {
+	//List the remainder of cmp2 copies, list cmp1 copies when finished scanning
+	while (head1<lstMember[cmp1].length){
+		rec[nrec] = lstMember[cmp1][head1];
+		head1++;
+		nrec++;
+		finishSize++;
+	}
+}
+ 
+else if (head1==lstMember[cmp1].length && head2<lstMember[cmp2].length) {
+	//List the remainder of cmp1 copies, list cmp2 copies when finished scanning
+	while (head2<lstMember[cmp2].length){
+		rec[nrec] = lstMember[cmp2][head2];
+		head2++;
+		nrec++;
+		finishSize++;
+	}
+}
+ 
+ 
+ 
+//When it arrives at the end of both lists
+ 
+//Update a pro list
+ 
+if (head1==lstMember[cmp1].length && head2==lstMember[cmp2].length) {
+	for (i=0; i<lstMember[cmp1].length+lstMember[cmp2].length; i++) {
+		lstMember[parent[cmp1]][i] = rec[i];
+	}
+	lstMember.pop();
+	lstMember.pop();
+	cmp1 = cmp1-2;
+	cmp2 = cmp2-2;
+	head1 = 0;
+	head2 = 0;
+	 
+	//Initialize the rec before performing the new comparison
+	 
+	if (head1==0 && head2==0) {
+		for (i=0; i<namMember.length; i++) {
+			rec[i] = 0;
+		}
+		nrec = 0;
+	}
+}
+ 
+ 
+ 
+if (cmp1<0) {
+ 
+	str = "Battle #"+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
+	document.getElementById("battleNumber").innerHTML = str;
+	showResult();
+	finishFlag = 1;
+}
+ 
+else {
+
+	showImage();
+	numQuestion++;
+ 
+}
+ 
+}
+ 
+ 
+ 
+//The results+++++++++++++++++++++++++++++++++++++++++++++++
+ 
+//&#38918;&#20301;=Rank/Grade/Position/Standing/Status
+ 
+//&#21517;&#21069;=Identification term
+ 
+function showResult() {
+ 
+var ranking = 1;
+ 
+var sameRank = 1;
+ 
+var imgRows = 5; // number of rows in column with images
+var maxRows = 52; // number of rows in a column 
+ 
+var str = "";
+ 
+var i;
+ 
+str += "<table style='border:0px'>" 
+ 
+str += "<td><table style=\"width:200px; font-size:11px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #000; border-collapse:collapse\" >";
+ 
+str += "<tr><td style=\"color:#ffffff; background-color:#000; text-align:center;\">Rank<\/td><td style=\"color:#ffffff; background-color:#000; text-align:center;\">Character<\/td><\/tr>";
+ 
+ 
+for (i=0; i<namMember.length; i++) {
+
+if (i == imgRows || ((i-imgRows) % maxRows == 0 && i != 0)) str += "<\/table><\/td><td><table style=\"width:200px; font-size:11px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #000; border-collapse:collapse\" align=\"center\">";
+ 
+str += "<tr><td style=\"border:1px solid #000; text-align:center; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #000; padding-left:5px;\">"+namMember[lstMember[0][i]][0]+"<\/td><\/tr>";
+ 
+if (i<namMember.length-1) {
+ 
+if (equal[lstMember[0][i]]==lstMember[0][i+1]) {
+ 
+sameRank++;
+ 
+} else {
+ 
+ranking += sameRank;
+ 
+sameRank = 1;
+ 
+}
+ 
+}
+ 
+}
+ 
+str += "<\/table><\/table>";
+ 
+ 
+ 
+document.getElementById("resultField").innerHTML = str;
+
+
+var elements = document.getElementsByClassName('resultImg');
+    while(elements.length > imgRows+2){
+        elements[imgRows+2].parentNode.removeChild(elements[imgRows+2]);
+}
+ 
+}
+ 
+function testRight () {
+	if(!cmp1) initList();
+	while(finishFlag==0) sortList(-1);
+}
+ 
+ 
+//Indicates two elements to compare+++++++++++++++++++++++++++++++++++
+ 
+function showImage() {
+ 
+var str0 = "Battle #"+numQuestion+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
+var str1 = ""+toNameFace(lstMember[cmp1][head1]);
+var str2 = ""+toNameFace(lstMember[cmp2][head2]);
+ 
+document.getElementById("battleNumber").innerHTML = str0;
+document.getElementById("leftField").innerHTML = str1;
+document.getElementById("rightField").innerHTML = str2;
+ 
+}
+ 
+ 
+ 
+//Convert numeric value into a name (emoticon)+++++++++++++++++++++++++++++++
+ 
+function toNameFace(n){
+ 
+var str = namMember[n][0];
+ 
+ 
+ 
+/*
+ 
+str += '<br />';
+ 
+switch(n) {
+ 
+//case -1 Because it is a sample, delete it
+ 
+case -1: str+=""; break;
+ 
+}*/
+ 
+return str;
+ 
+}
+ 
+//-->
+ 
+</script>
+ 
+<style type="text/css">
+ 
+<!--
+ 
+#mainTable{
+ 
+font-size: 11px;
+ 
+text-align: center;
+ 
+vertical-align: middle;
+ 
+width: 410px;
+ 
+margin-left: auto;
+ 
+margin-right: auto;
+ 
+border-collapse: separate;
+ 
+border-spacing: 10px 5px;
+ 
+}
+ 
+#leftField{
+ 
+width: 120px;
+ 
+height: 200px;
+ 
+border: 1px solid #000;
+ 
+cursor: pointer;
+ 
+}
+ 
+#rightField{
+ 
+width: 120px;
+ 
+height: 200px;
+ 
+border: 1px solid #000;
+ 
+cursor: pointer;
+ 
+}
+ 
+.middleField{
+ 
+width: 120px;
+ 
+height: 70px;
+ 
+border: 1px solid #000;
+ 
+cursor: pointer;
+ 
+}
+ 
+a{
+ 
+color: #5b17ba;
+ 
+text-decoration : none;
+ 
+}
+ 
+a:hover{
+ 
+color: #945ce3;
+ 
+}
+ 
+body {
+ 
+width: 600px;
+ 
+margin: 0 auto;
+ 
+font-family: 'Arial', serif;
+
+font-size: 11px;
+ 
+}
+ 
+-->
+ 
+</style>
+ 
+
+<link href="css.css" rel="stylesheet" type="text/css"></head>
+
+ 
+<body vlink="#0099ff" text="#000000" link="#0099ff" bgcolor="#ffffff" alink="#0099ff">
+ 
+<p class="instructions">
+</p><center><img src="http://i.imgur.com/11OrxAT.png"><br><br>
+<p>^ you_irl when you see this sorter <br> this was a mistake.</p>
+ 
+<p></p>
+ 
+ 
+ 
+<table id="mainTable" align="center">
+ 
+<tbody><tr>
+ 
+<td id="battleNumber" colspan="4" style="padding-bottom: 10px;"><b>Battle #1<br>0% sorted.</b></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td id="leftField" onclick="initList();" rowspan="2" style="text-align:center;"><img src="http://i.imgur.com/pOttOf5.png"></td>
+ 
+<td class="middleField" onclick="initList();" colspan="2" style="text-align:center;">Click to Start!</td>
+<td class="middleField" onclick="if(finishFlag==0)undoList();" style="text-align:center; display:none;">Undo</td>
+ 
+<td id="rightField" onclick="initList();" rowspan="2" style="text-align:center;"><img src="http://i.imgur.com/9nWHpmJ.png"></td>
+ 
+</tr>
+ 
+<tr>
+ 
+<td class="middleField" onclick="saveList();" style="text-align:center; display:none;">Save Progress</td>
+<td class="middleField" onclick="loadList();" colspan="2" style="text-align:center;">Load Progress</td>
+ 
+</tr>
+
+</tbody></table>
+ 
+<br><br>
+
+<div id="optionField" align="center"><label><input id="opt0" type="checkbox">Filter Staff Members</label><br>
+<input id="opt1" type="checkbox">Filter Banned Users / Leavers / Inactive people <br>
+<input id="opt2" type="checkbox">Filter Bots<br>
+</div>
+ 
+<div id="resultField" style="text-align: center;" align="left">
+ 
+<br>
+ 
+</div>
+<p class="other">
+</p><center><small>This page was made by Tamamo#1343.<br>Join our <a href="https://discord.gg/touhou">Touhou Server</a> Today!<br>v1.1: Updated it to include 2017 users<br>Sorry Spaztique, Hulohot and Yukkuri, you buggged the bot out.<br><br>If you have any suggestions or feedback go fuck yourself</a><br><br><small><script language="JavaScript" src="Sorter2_files/ocount.php"></script></small></a></small></center>
+<br>
+
+<br>
+<p></p>
+ 
+
+ 
+</a></body></html>

@@ -1,0 +1,71 @@
+	<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<link rel="shortcut icon" href="http://i.imgur.com/61q41HP.png">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="description" content="Monster Girl Quest character sorter">
+<meta property="og:site_name" content="Kamuro.xyz">
+<meta property="og:title" content="Monster Girl Quest Character Sorter">
+<meta property="og:image" content="http://i.imgur.com/61q41HP.png">
+<meta property="og:description" content="This is a Monster Girl Quest Character sorter, made by fans, for fans.">
+<!-- Made by Ron, Tamamo#1343 on Discord, http://steamcommunity.com/id/Futatsuiwa_Mamizou/ on steam.--> 
+<meta name="author" content="Tamamo#1343">
+
+<script type="text/javascript" src="sorter.js"></script>
+ 
+<link href="sorter.css" rel="stylesheet" type="text/css"></head>
+
+ 
+<body vlink="#0099ff" text="#000000" link="#0099ff" bgcolor="#ffffff" alink="#0099ff">
+ 
+<p class="instructions">
+</p><center><img src="http://i.imgur.com/Cfw1gy1.png"><br><br>
+<b>Welcome to the Monster Girl Quest sorter.</b><br>Pick who you like better in each battle to get an accurate list of your<br>favorite characters from the game.<br><br>Note: hitting 'tie' button frequently will negatively affect your results.<br>If the sorter takes too long, just use the save button and you can continue it later.<br><br></center>
+ 
+<table id="mainTable" align="center">
+ 
+<tbody><tr>
+ 
+<td id="battleNumber" colspan="4" style="padding-bottom: 10px;"><b>Battle #1<br>0% sorted.</b></td>
+</tr>
+<tr>
+<td id="leftField" onclick="initList();" rowspan="2" style="text-align:center;"><img src="http://i.imgur.com/RFE0sBU.png"></td>
+<td class="middleField" onclick="initList();" colspan="2" style="text-align:center;">Click to Start!</td>
+<td class="middleField" onclick="if(finishFlag==0)undoList();" style="text-align:center; display:none;">Undo</td> 
+<td id="rightField" onclick="initList();" rowspan="2" style="text-align:center;"><img src="http://i.imgur.com/bXIpnHr.png"></td>
+</tr>
+ 
+<tr>
+<td class="middleField" onclick="saveList();" style="text-align:center; display:none;">Save Progress</td>
+<td class="middleField" onclick="loadList();" colspan="2" style="text-align:center;">Load Progress</td>
+</tr>
+
+</tbody></table>
+ 
+<br>
+<br>
+
+<div id="optionField" align="center"><label><input id="opt0" type="checkbox">Filter Undead</label><br>
+<input id="opt1" type="checkbox">Filter Chimera/Experiments<br>
+<input id="opt2" type="checkbox">Filter Male Characters<br>
+<input id="opt3" type="checkbox">Filter Paradox-Only Characters<br>
+<input id="opt4" type="checkbox">Filter Duplicates<br>
+<input id="opt5" type="checkbox">Filter Characters that don't appear in Paradox<br>
+</div>
+ 
+<div id="resultField" style="text-align: center;" align="left">
+ 
+<br>
+ 
+</div>
+<p class="other">
+</p><center><small> v1.001; Added some paradox characters.<br>v1.1; Added all of Paradox & Every male, also added some missing characters from the Trilogy<br>v1.2; Added a Save/Load button, and an Undo button, also revamped the last filter<br><br>This page was made by Tamamo#1343.<br><br>If you have any suggestions or feedback, add me on Discord or on <a href="http://steamcommunity.com/id/Futatsuiwa_Mamizou/%22%22">Steam</a><br><br>Thanks Frelia for helping me out with the code, check out his <a href="http://tohosort.comoj.com/">Touhou Sorter!</a><br><br>Ps: <a href="http://i.imgur.com/2n0LGe6.png">My taste</a> > Your taste<small></small></a></small></center>
+<br>
+
+<br>
+<p></p>
+ 
+
+ 
+</a></body></html>
